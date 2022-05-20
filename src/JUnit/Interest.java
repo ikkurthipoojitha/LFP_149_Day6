@@ -9,7 +9,7 @@ public class Interest {
         float n = 12 * Y;
         r = R / (12 * 100);
         float I;
-        float t = 1 - (1 + r) ^(-n);
+        float t = (float) (1 - Math.pow((1 + r) ,(-n)));
         float t1 = P * r;
         I = t1/t;
         System.out.println(I);
